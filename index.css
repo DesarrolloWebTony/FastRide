@@ -5,11 +5,28 @@
     font-family: 'Roboto', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
+
 .nav{
     position: relative;
     height: 65vh;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#rutas{
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('img/hero2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#acerca{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('img/hero3.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -37,9 +54,9 @@
 .menu li a{
     color: #fff;
     text-decoration: none;
-    background: #0f990f;
+    /* background: #0f990f;
     padding: 8px 24px;
-    border-radius: 6px;
+    border-radius: 6px; */
 }
 
 /* .menu li img{
@@ -83,8 +100,12 @@
 
 .hero h2{
     color: #fff;
-    padding: 40px;
+    padding: 16px;
     font-size: 42px;
+}
+
+.hero p{
+    color: #fff;
 }
 
 .btns{
@@ -101,7 +122,7 @@
     background: #0f990f;
     text-decoration: none;
     color: #fff;
-    margin: 0px 16px;
+    margin: 16px 16px;
     border-radius: 6px;
     font-weight: 100;
 }
@@ -138,6 +159,18 @@
     border-radius: 50%;
 }
 
+.card-top i{
+    font-size: 40px;
+}
+
+.card-top h4{
+    padding: 8px 0px;
+}
+
+.card-top p{
+    text-align: center;
+}
+
 section{
     width: 90%;
     margin: auto;
@@ -147,6 +180,11 @@ section{
 
 section img{
     height: 80%;
+}
+
+#section-rutas{
+    flex-direction: column;
+    /* border: 1px solid #000; */
 }
 
 .content-right, .content-left{
@@ -178,4 +216,164 @@ section img{
 .redes i{
     font-size: 40px;
     margin: 0px 16px;
+}
+
+/* Populares Page*/
+
+.video-content{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-content video{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-content{
+    background: linear-gradient(rgba(0, 0, 0, 0.253),rgba(0, 0, 0, 0.26));
+}
+
+.cinco-card{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 65vh;
+    margin: 32px auto;
+    /* border: 1px solid #000; */
+    border-radius: 10px;
+    color: #fff;
+}
+
+.cinco-card h1{
+    margin: 32px 32px;
+    font-size: 48px;
+}
+
+.cinco-card p{
+    margin: 8px 32px;
+    line-height: 26px;
+    letter-spacing: 2px;
+}
+
+.cinco-card a{
+    width: 220px;
+    height: 40px;
+    display: block;
+    margin: 24px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    border-radius: 6px;
+}
+
+#cdmx{
+    background: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url('img/cdmx.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    object-fit: fill;
+}
+
+#jalisco{
+    background: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url('img/jalisco.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    object-fit: fill;
+}
+
+#toluca{
+    background: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url('img/toluca.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: fill;
+}
+
+#campeche{
+    background: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url('img/campeche.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    object-fit: fill;
+}
+
+/* RutasPage */
+
+.options-rutas{
+    width: 80%;
+    height: 100px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid #000; */
+}
+
+.video-rutas{
+    position: relative;
+    width: 60%;
+    height: 60%;
+    margin: 16px auto;
+    overflow: hidden;
+}
+
+.video-rutas video{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.search label {
+    margin: 8px;
+}
+
+.search input{
+    display: inline-block;
+    height: 32px;
+}
+
+.search i{
+    cursor: pointer;
+}
+
+/* Acerca */
+
+.team{
+    width: 90%;
+    margin: auto;
+    border: 1px solid #000;
+}
+
+#acercade{
+    flex-direction: column;
+    align-items: center;
+}
+
+#acercade p{
+    padding: 32px;
+}
+
+#acercade h2{
+    margin-top: 48px;
+}
+
+#acercade i{
+    font-size: 48px;
+    margin-top: 16px;
 }
