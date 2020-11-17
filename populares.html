@@ -12,8 +12,19 @@
 </head>
 
 <body>
-
     <div class="video-content">
+       <div class="navbar-popu">
+           <h1><a href="index.html">Fast Ride</a></h1>
+           <div class="menu">
+            <ul>
+                <li id="menu-popu"><a href="rutas.html">Rutas</a></li>
+                <li id="menu-popu"><a href="populares.html">Populares</a></li>
+                <li id="menu-popu"><a href="acerca.html">Acerca</a></li>
+            </ul>
+            <img src="img/avatar.jpg" alt="" onclick="mostrar()">
+            <span id="logout"><a href="login.html">Logout</a></span>
+        </div>
+       </div>
         <video id="video" src="img/copiloto.mp4" autoplay muted loop></video>
         <div class="hero">
             <h2>¡Los mejores destinos para viajar!</h2>
@@ -67,6 +78,7 @@
             <i class='bx bxl-instagram-alt'></i>
         </div>
     </footer>
-</body>
 
+    <script src="loginBtn.js"></script>
+</body>
 </html>

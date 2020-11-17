@@ -239,6 +239,8 @@ section img{
 
 .video-content{
     position: relative;
+    padding: 1px 0px;
+    position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -246,6 +248,7 @@ section img{
 
 .video-content video{
     position: absolute;
+    top: 0;
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -255,7 +258,7 @@ section img{
 }
 
 .video-content{
-    background: linear-gradient(rgba(0, 0, 0, 0.253),rgba(0, 0, 0, 0.26));
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4));
 }
 
 .cinco-card{
@@ -442,8 +445,51 @@ section img{
     color: #fff;
 }
 
-/* .login-page p{
-    margin: 16px;
+
+/*navbar populares*/
+.navbar-popu{
+    /* position: relative; */
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-popu a{
     color: #fff;
+}
+
+.navbar-popu img{
+    position: absolute;
+    top: 10px;
+    right: 56px;
+    width: 55px;
+    border-radius: 50%;
     cursor: pointer;
-} */
+}
+
+.navbar-popu span{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    right: 45px;
+    width: 75px;
+    height: 25px;
+    background: #fff;
+    color: #000;
+    border-radius: 6px;
+    visibility: hidden;
+}
+
+.menu a{
+    color: #000;
+}
+
+#menu-popu {
+    padding: 16px;
+}
